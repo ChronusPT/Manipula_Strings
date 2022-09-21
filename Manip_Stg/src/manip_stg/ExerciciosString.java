@@ -3,15 +3,42 @@ package manip_stg;
 
 
 class ExerciciosString {
-
-    static int contaCaracteres() {
+    
+    static String s,s1;
+    static void leStrings(String texto){
         
-        String s,s1;
-        System.out.println("Insira um texto");
+        System.out.println(texto);
         s = Manip_Stg.ler.next();
         s1 = Manip_Stg.ler.nextLine();
         s = s + s1;
+    }
+
+    static int contaCaracteres() {
+        
+        leStrings("Insira um texto");
         return s.length(); 
+        
+    }
+
+    static void ArvoreLetras() {
+        
+        int x,y;
+        
+        leStrings("Insira uma palavra");
+        
+        for (x = 0; x < s.length(); x++ ) {// controla as linhas
+            for (y = 0; y <= x; y++ ) {// precorre colunas
+                System.out.print(s.charAt(y));
+            }
+            System.out.println();
+        }
+        
+        for (x = s.length()-1; x >= 0; x--) {
+            for (y = 0; y < x; y++ ) {
+                System.out.print(s.charAt(y));  
+            }
+            System.out.println();  
+        }
         
     }
     
