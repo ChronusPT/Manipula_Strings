@@ -41,5 +41,19 @@ class ExerciciosString {
         }
         
     }
+
+    static void capitalizaLetras() {
+        
+        
+        leStrings("Insira uma palavra em minusculas :");
+        
+        System.out.println(s.toUpperCase());
+        
+        leStrings ("Insira uma palavra em maiusculas :");
+        
+        System.out.println(s.toLowerCase());
+        
+           
+    }
     
 }

@@ -15,6 +15,7 @@ public class Manip_Stg {
             System.out.println(">>>>>>>>>MENU<<<<<<<<<");
             System.out.println("1 - Tamanho String :");
             System.out.println("2 - Arvore de letras ");
+            System.out.println("3 - Capitalização de Letras ");
             
             System.out.println("0 - Sair");
             System.out.println("Insira a opção pretendida");
@@ -27,6 +28,9 @@ public class Manip_Stg {
                     break;
                 case 2:
                     ExerciciosString.ArvoreLetras();
+                    break;
+                case 3:
+                    ExerciciosString.capitalizaLetras();
                     break;
                 default:
                     System.out.println("Insira opção valida");
